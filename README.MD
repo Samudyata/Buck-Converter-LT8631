@@ -1,49 +1,61 @@
-# ⚡ Buck Converter Design – ISRO Internship
+# Buck Converter Design using LT8631 - ISRO Internship
 
-This project presents the design and simulation of a **high-efficiency buck converter** during an internship at the **Indian Space Research Organization (ISRO)**. The converter is optimized for compact PCB layout and excellent thermal performance—crucial for aerospace power systems.
-
----
-
-## 🛰️ Project Overview
-
-### Objective:
-To design a compact, thermally efficient DC-DC buck converter using **LT8631** capable of handling high-current loads in satellite subsystems or instrumentation modules.
+![ISRO](https://img.shields.io/badge/ISRO-Internship-blue) ![OrCAD](https://img.shields.io/badge/Tool-OrCAD-green) ![LTspice](https://img.shields.io/badge/Simulation-LTspice-orange)
 
 ---
 
-## 🔧 Key Components
+## Overview
 
-- **IC Used:** LT8631 – A synchronous step-down regulator with ultralow EMI performance  
-- **Tool:** OrCAD – for schematic capture and PCB layout  
-- **Thermal Analysis:** Simulated for heat dissipation and junction temperature optimization  
-- **Output Requirements:**  
-  - Input: 9V–18V  
-  - Output: 5V / 3A  
-  - Efficiency > 90%
+This project presents the design and simulation of a **compact, thermally efficient DC-DC buck converter** developed during an internship at the **Indian Space Research Organization (ISRO)**. The converter targets high-current loads in satellite subsystems and instrumentation modules, with an emphasis on minimal EMI, optimized thermal performance, and aerospace-grade reliability.
 
 ---
 
-## ⚙️ Tools & Libraries
+## Design Specifications
 
-- OrCAD PCB Designer  
-- LTspice for simulation  
-- [LT8631 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/lt8631.pdf)
-
----
-
-## ✅ Highlights
-
-- Optimized copper pour for heat sinking  
-- Output ripple < 30mV (at 5V, 3A load)  
-- Minimal EMI design with shielding  
-- Via stitching and power planes for thermal performance
+| Parameter | Value |
+|-----------|-------|
+| Input Voltage | 9V - 18V |
+| Output Voltage | 5V |
+| Output Current | 3A |
+| Efficiency | >90% |
+| Output Ripple | <30mV |
+| IC | LT8631 (Synchronous Step-Down) |
 
 ---
 
-## 🧠 Learning Outcomes
+## Design Highlights
 
-- Professional PCB design for power electronics  
-- Thermal profiling in power systems  
-- Efficiency optimization using real-world specs  
-- Integration of simulation + layout in aerospace design
+- **Copper Pour Optimization** -- Dedicated copper pours on power planes for effective heat sinking and low-impedance current paths.
+- **Via Stitching** -- Thermal and ground vias stitched across the PCB to improve heat dissipation and reduce ground impedance.
+- **Minimal EMI** -- Layout techniques and component placement designed to minimize electromagnetic interference, meeting aerospace EMC requirements.
+- **Shielding** -- Proper shielding strategies applied to sensitive nodes to maintain signal integrity under high-current switching.
 
+---
+
+## Tools Used
+
+- **OrCAD PCB Designer** -- Schematic capture and PCB layout design.
+- **LTspice** -- Circuit simulation for transient analysis, efficiency estimation, and ripple characterization.
+- **LT8631 Datasheet** -- [Analog Devices LT8631 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/lt8631.pdf)
+
+---
+
+## Learning Outcomes
+
+- Professional PCB design practices for power electronics in aerospace applications.
+- Thermal profiling and junction temperature optimization for high-current regulators.
+- Efficiency optimization using real-world component specifications and layout constraints.
+- End-to-end integration of simulation and physical layout in aerospace power system design.
+
+---
+
+## Author
+
+**Samudyata Jagirdar**
+sjagird1@asu.edu
+
+---
+
+## Acknowledgements
+
+This project was completed as part of an internship at the **Indian Space Research Organization (ISRO)**. Sincere thanks to ISRO for providing the opportunity, guidance, and resources to work on aerospace power electronics.
